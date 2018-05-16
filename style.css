@@ -2,6 +2,45 @@
 	font-family: lato;
 }
 
+/* hamburger menu */
+
+.navbar-toggle {
+  width: 30px;
+  height:30px;
+  cursor: pointer;
+  padding: 5px;
+  display: none;
+}
+
+span {
+  background-color: black;
+  width:30px;
+  height: 3px;
+  display: block;
+  border-radius: 20%;
+  transition:0.25s;
+}
+
+span:nth-child(2) {
+  margin:7px 0;
+}
+
+.animate span:nth-child(1) {
+  transform: translateY(10px)   rotate(45deg);
+  background-color: #ff0000;
+}
+
+.animate span:nth-child(2) {
+  opacity: 0;
+}
+
+.animate span:nth-child(3) {
+  transform: translateY(-10px)   rotate(-45deg);
+  background-color: #ff0000;
+}
+
+/* hamburger menu end */
+
 .nav-navbar {
 	display: flex;
 	justify-content: space-between;
@@ -52,52 +91,66 @@
 	color: #ff0000;
 }
 
-/* hamburger menu */
-
-.navbar-toggle {
-  width: 30px;
-  height:30px;
-  cursor: pointer;
-  padding: 5px;
-  display: none;
+.main-content {
+	padding-top: 90px;
 }
 
-span {
-  background-color: black;
-  width:30px;
-  height: 3px;
-  display: block;
-  border-radius: 20%;
-  transition:0.25s;
+.main-bio {
+	padding: 10px;
 }
 
-span:nth-child(2) {
-  margin:7px 0;
+h2 {
+	font-size: 30px;
 }
 
-.animate span:nth-child(1) {
-  transform: translateY(10px)   rotate(45deg);
-  background-color: #ff0000;
+.profession {
+	font-size: 40px;
 }
 
-.animate span:nth-child(2) {
-  opacity: 0;
+.social-icons {
+	padding: 15px;
+	text-align: center;
+	border-top: 1px solid #ff0000;
 }
 
-.animate span:nth-child(3) {
-  transform: translateY(-10px)   rotate(-45deg);
-  background-color: #ff0000;
+.social-icons a {
+	color: #000000;
 }
 
-/* hamburger menu end */
+.fab {
+	padding: 10px;
+}
 
+.fab.fa-facebook.fa-2x:hover {
+	color: #3B5998;
+}
+
+.fab.fa-facebook-messenger.fa-2x:hover {
+	color: #0084FF
+}
+
+.copyright {
+	font-size: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 10px;
+	box-sizing: border-box;
+}
 
 
 
 @media screen and (max-width: 995px) {
 
+	.container {
+		position: relative;
+	}
+
 	.nav-navbar {
 		display: block;
+		background-color: #ffffff;
+		width: 100%;
+		position: fixed;
 	}
 
 	.navbar-collapse {
