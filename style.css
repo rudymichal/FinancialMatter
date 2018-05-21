@@ -92,19 +92,47 @@ span:nth-child(2) {
 }
 
 .main-content {
-	padding-top: 90px;
+	position: relative;
+}
+
+.blur {
+	background-image: url("./img/handshake.png");
+	background-size: cover;
+    width: 100%;
+    min-height: 500px;
+    height: 100%;
+    filter: blur(2px);
+    z-index: -2;
+    position: fixed;
 }
 
 .main-bio {
+	box-sizing: border-box;
 	padding: 10px;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background: rgba(255,255,255,0.6);
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-info {
+	background-color: #ffffff;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
 }
 
 h2 {
 	font-size: 30px;
+	text-transform: uppercase;
 }
 
 .profession {
 	font-size: 40px;
+	text-transform: uppercase;
 }
 
 .social-icons {
