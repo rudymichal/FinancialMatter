@@ -92,14 +92,13 @@ span:nth-child(2) {
 }
 
 .main-content {
-	position: relative;
+	
 }
 
 .blur {
-	background-image: url("./img/handshake.png");
+	background: url("./img/handshake.png") no-repeat center center fixed;
 	background-size: cover;
     width: 100%;
-    min-height: 500px;
     height: 100%;
     filter: blur(2px);
     z-index: -2;
@@ -114,14 +113,13 @@ span:nth-child(2) {
     text-align: center;
     background: rgba(255,255,255,0.6);
     z-index: -1;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-top: 150px;
 }
 
 .footer-info {
 	background-color: #ffffff;
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 }
 
@@ -133,6 +131,15 @@ h2 {
 .profession {
 	font-size: 40px;
 	text-transform: uppercase;
+}
+
+.skill-list {
+	padding: 0;
+}
+
+.skill-list li {
+	padding: 10px;
+	list-style-type: none;
 }
 
 .social-icons {
@@ -211,6 +218,10 @@ h2 {
 
 	.navbar-menu-list li:last-child {
 		padding-right: 0px;
+	}
+
+	.main-bio {
+		padding-top: 150px;
 	}
 
 }
