@@ -122,6 +122,7 @@ h2 {
 	text-transform: uppercase;
 	padding: 30px 10px;
 	margin: 0;
+	font-weight: 900;
 }
 
 .profession {
@@ -129,6 +130,7 @@ h2 {
 	text-transform: uppercase;
 	padding: 20px 10px;
 	margin: 0;
+	font-weight: lighter;
 }
 
 .skills {
@@ -144,6 +146,7 @@ h2 {
 	margin: auto;
 	line-height: 2.1;
 	max-width: 800px;
+	font-weight: 300;
 }
 
 .social-icons {
@@ -177,6 +180,54 @@ h2 {
 	box-sizing: border-box;
 }
 
+/* abouy content */
+
+.about-content {
+	text-align: center;
+	padding: 15px;
+}
+
+.about-info {
+	padding: 20px;
+	margin: auto;
+	line-height: 2.1;
+	max-width: 800px;
+	font-size: 19px;
+	text-align: justify;
+	font-weight: 300;
+}
+
+/* offer content */
+
+.offer-content {
+	text-align: center;
+	text-transform: uppercase;
+	list-style-type: none;
+}
+
+.offer-content li {
+	list-style-type: none;
+}
+
+.offer-info {
+	display: flex;
+	justify-content: space-around;
+}
+
+.offer-info-clients p {
+	padding: 20px;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.offer-info-clients ul {
+	padding: 15px 5px;
+}
+
+.offer-info-clients li {
+	padding: 10px;
+	font-weight: 300;
+}
 
 
 @media screen and (max-width: 995px) {
@@ -226,6 +277,19 @@ h2 {
 
 	.skill-list {
 		font-size: 15px;
+	}
+
+	/* about css */
+
+	.about-info {
+		font-size: 15px;
+		padding: 5px;
+	}
+
+	/* offer content */
+
+	.offer-info {
+		flex-direction: column;
 	}
 
 
