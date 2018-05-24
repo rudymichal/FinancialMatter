@@ -323,6 +323,13 @@ h2 {
 
 
 }
+
+@media screen and (max-width: 320px) {
+
+	.skill-list {
+		margin-top: 85px;
+	}
+}
 	
 
 

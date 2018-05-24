@@ -6,7 +6,10 @@ $(document).ready(function(){
 		$('.navbar-collapse').toggleClass('collapse-in');
 	});
 
+	$(".scroll-button").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $("#information").offset().top
+	    }, 1000);
+	});
+
 });
-
-
-
