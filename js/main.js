@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 	$(".scroll-button").click(function() {
 	    $('html, body').animate({
-	        scrollTop: $("#information").offset().top
+	        scrollTop: $("#information").offset().top - 120
 	    }, 1000);
 	});
 
