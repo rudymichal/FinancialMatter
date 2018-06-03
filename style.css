@@ -274,14 +274,44 @@ h2 {
 
 /* contact content */ 
 
+.blur.contact-background {
+	height: 80vh;
+}
+
 .contact-info {
 	padding-top: 150px;
 	text-align: center;
 }
 
+.contact-info p {
+	font-size: 20px;
+	font-weight: 300;
+}
+
 .contact-paragraf {
 	text-transform: uppercase;
 	font-weight: 300;
+}
+
+.contact-details ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: 0;
+} 
+
+.contact-details li {
+	padding: 70px;
+}
+
+.contact-details a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.contact-details a:hover {
+	color: #ff0000;
 }
 
 @media screen and (max-width: 995px) {
@@ -358,6 +388,27 @@ h2 {
 		flex-direction: column;
 	}
 
+	/* contact content */
+
+	.contact-details ul {
+		flex-direction: column;
+	}
+
+	.contact-details li {
+		padding: 40px;
+	}
+
+	.blur.contact-background {
+		height: 100%;
+	}
+
+	.contact-info p {
+		font-size: 15px;
+	}
+
+	.copyright {
+		font-size: 12px;
+	}
 
 }
 	
